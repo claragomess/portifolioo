@@ -24,7 +24,9 @@ body{
     margin: 0;
     font-family: 'Clara';
     background: linear-gradient(45deg,#0D1E20, #313E2A, #0D1E20);
+    /*
     min-height: 2000px;
+    */
     color: #cb431d;
 }
 header{
@@ -59,11 +61,16 @@ header{
 
 main{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 50px;
-    max-width: 1440px;
-    margin: 150px auto;
+    margin: 160px auto;
+}
+.introduction{
+    display: flex;
+    
+    padding-right: 200px;
 }
 #mais-conteúdo{
     margin-top: 100px;
@@ -148,13 +155,15 @@ button:hover{
 
 .formacao {
     margin-top: 100px; 
+    /*
     background-color: #1a1a1a;
+    */
     color: white;
     border-radius: 8px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: row-reverse; 
     align-items: center; 
-    gap: 30px; 
+    gap: 145px; 
 }
 
 
@@ -206,7 +215,7 @@ display: flex;
 .projetos {
     margin-top: 50px;
     padding: 20px;
-    background-color: #1a1a1a;
+
     color: white;
     border-radius: 8px;
     display: flex;
@@ -214,15 +223,30 @@ display: flex;
     gap: 40px; 
     align-items: center;
 }
-
-
-.projeto {
+.projetos:first-child{
+    background-color: #e65c00;
+    color: wheat;
+    border: 1px solid yellow;
+}
+.projeto1 {
     display: flex;
     gap: 20px;
     align-items: center;
-    max-width: 900px;
-    text-align: justify;
-    background-color: #2a2a2a;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 1284px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.046);
+}
+
+.projeto2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1284px;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.046);
@@ -230,8 +254,15 @@ display: flex;
 
 
 .projeto-imagem {
-    width: 250px;
+    width: 450px;
     height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.projeto-imagem2 {
+    width: 450px;
+    height: 227px;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
@@ -244,7 +275,8 @@ display: flex;
 
 
 .projeto-texto {
-    flex: 1;
+    width: 650px;
+    text-align: justify;
     color: white;
 }
 
@@ -257,4 +289,8 @@ display: flex;
 .projeto-texto p {
     font-size: 1.2rem;
     line-height: 1.6;
+}
+
+.project-text{
+    text-align: center;
 }
