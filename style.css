@@ -1,0 +1,260 @@
+
+@font-face {
+    font-family: 'Clara';
+    src: url('./Chillen.ttf');
+}
+@font-face{
+    font-family: 'texto2';
+    src: url('./Grand\ Casino\ Demo.ttf');
+}
+body{
+    font-family: 'Clara';
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-left: 5000px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body{
+    margin: 0;
+    font-family: 'Clara';
+    background: linear-gradient(45deg,#0D1E20, #313E2A, #0D1E20);
+    min-height: 2000px;
+    color: #cb431d;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background: transparent;
+}
+.contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #cb431d;
+    gap: 15px;
+    font-family: 'texto2';
+    font-size: 1.5rem;
+    margin-right: 10px;
+    
+
+}
+.contact-info p{
+    margin: 0 15px;
+    font-size: 20px;  
+    gap: 100px;
+    color: #cb431d;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1440px;
+    margin: 150px auto;
+}
+#mais-conteúdo{
+    margin-top: 100px;
+    padding-top: 100px;
+}
+.content{
+    max-width: 50%;
+
+}
+.texto{
+    font-family: 'texto2';
+    font-size: larger;
+}
+
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    
+}
+p{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: white;
+}
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #cb431d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+}
+button:hover{
+    background-color: #e65c00;
+    cursor: pointer;
+    transform: scale(1.10);
+    transition: ease-in-out 0.5s;
+}
+.photo{
+    max-width: 100%;
+    border: 1px solid #ff6600;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
+
+
+}
+.boxline1{
+    width: 355px;
+    height: 415px;
+    border: 1px solid #cb431d;
+    position: absolute;
+    top: 20px;
+    right: -20px;
+}
+
+.boxline2{
+    width: 355px;
+    height: 420px;
+    border: 1px solid #cb431d;
+    top: 15px;
+    right:-20px;
+    position: absolute;
+}
+.boxline3{
+    width: 355px;
+    height: 415px;
+    border: 1px solid #cb431d;
+    position: relative;
+}
+.content {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+
+.formacao {
+    margin-top: 100px; 
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 30px; 
+}
+
+
+.texto-formacao {
+    text-align: center;
+}
+
+.texto-formacao h2 {
+    
+    
+font-size: 2rem;
+    margin-bottom: 15px;
+    color: #cb431d;
+}
+
+.texto-formacao ul {
+    list-style: none;
+    padding: 0;
+    
+   
+font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.certificados {
+    text-align: center;
+}
+
+.titulo-certificados {
+    font-family: 'Clara';
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #cb431d;
+}
+
+.imagens-certificados {
+    
+  
+display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certificado {
+    width: 200px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.projetos {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+    align-items: center;
+}
+
+
+.projeto {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    max-width: 900px;
+    text-align: justify;
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.046);
+}
+
+
+.projeto-imagem {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.projeto-imagem:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.5);
+}
+
+
+.projeto-texto {
+    flex: 1;
+    color: white;
+}
+
+.projeto-texto h3 {
+    font-size: 1.8rem;
+    color: #cb431d;
+    margin-bottom: 10px;
+}
+
+.projeto-texto p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
